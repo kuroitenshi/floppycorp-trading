@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          sso:
+            client-id: sta_floppycorp
+            client-secret: 58d9ad58-2fc8-4073-bb6f-1e92ed210e9a
+            authorization-grant-type: client_credentials
+            scope:
+            - bid
+        provider:
+          sso:
+            issuer-uri: https://login.sso.az.run.withtanzu.com
