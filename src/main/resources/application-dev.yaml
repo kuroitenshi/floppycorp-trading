@@ -15,3 +15,9 @@ management:
     metrics:
       export:
         enabled: false
+app:
+  marketplace:
+    url: https://sta.az.run.withtanzu.com
+  agent:
+    strategy: buy-lower-stock
+    user: floppycorp
