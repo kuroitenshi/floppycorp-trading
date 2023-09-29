@@ -9,9 +9,9 @@ metadata:
 spec:
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/kuroitenshi/floppycorp-trading.git
       ref:
-        branch: main
+        branch: master
   build:
     env:
     - name: BP_JVM_VERSION
