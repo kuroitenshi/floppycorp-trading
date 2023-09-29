@@ -26,7 +26,7 @@ class BuyLowerStockBidAgent implements BidAgent {
 
     List<Map<String, BigDecimal>> listOfCalculatedMovingAverages = new ArrayList<>();
 
-    private Long time;
+    private Long time = 0L;
 
     private int lastPeriod = 4;
 
@@ -64,6 +64,10 @@ class BuyLowerStockBidAgent implements BidAgent {
                 }
 
             }
+        }
+
+        if(listOfCalculatedMovingAverages.size() > 2){
+            listOfCalculatedMovingAverages.remove(0);
         }
 
         if(listOfCalculatedMovingAverages.size() == 2){
